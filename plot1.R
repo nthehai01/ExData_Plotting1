@@ -1,8 +1,11 @@
 library(dplyr) 
 
 
+
 #####################################
 ## DOWNLOAD AND UNZIP DATA
+dir.create("./data", showWarnings = FALSE)
+
 downloadURL <- "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip"  ## URL for downloading data
 downloadFile <- "./data/household_power_consumption.zip"  ## file directory for placing downloaded the zipped file
 householdFile <- "./data/household_power_consumption.txt"  ## file directory for placing the unzipped file
